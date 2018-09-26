@@ -1,0 +1,110 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.container
+{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: row;
+margin: 0px;
+}
+nav
+{
+width:25%;
+height: 100vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+text-decoration: none;
+color: whitesmoke;
+background-color: rgb(67, 69, 73);
+position: fixed;
+}
+.container ul
+{
+    width:90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    text-decoration: none;
+    padding: 0;
+}
+.container li
+{   
+    color: #848485;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #727273;
+    text-align: center;
+    font-size: 2.2em;
+	list-style: none;
+	margin: 10px;
+    margin-top: 2px;
+   cursor: pointer;
+}
+.container li:hover
+{
+    color: whitesmoke;
+}
+.container li:nth-of-type(7){ border-bottom:none;}
+.content
+{
+    width:75%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.zakladka
+{
+width: 100%;
+height: 100vh;
+background-color: bisque;
+}
+
+.zakladka:nth-of-type(1){background: url('zdj.jpg'); background-size: cover;}
+.zakladka:nth-of-type(2){background-color: turquoise;}
+.zakladka:nth-of-type(3){background-color:peru;}
+.zakladka:nth-of-type(4){background-color:green;}
+.zakladka:nth-of-type(5){background-color: blue;}
+.zakladka:nth-of-type(6){background-color: gray;}
+.zakladka:nth-of-type(7){background-color: rgb(43, 255, 0);}
+.zakladka:nth-of-type(8){background-color: rgb(105, 64, 57);}
+#descr
+{
+	display:none;
+	
+	flex-direction: column;
+	background-color: rgba(128, 128, 128,0);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#descr[style*="display: block"] {
+  display: flex !important;
+}
+#descr a:first-child{text-align: right;}
+#descr a:hover{color: gray;}
+#descr1
+{
+	display:none;
+	
+	flex-direction: column;
+	background-color: rgba(128, 128, 128,0);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#descr1[style*="display: block"] {
+  display: flex !important;
+}
+#descr1 a:first-child{text-align: right;}
+#descr1 a:hover{color: gray;}
